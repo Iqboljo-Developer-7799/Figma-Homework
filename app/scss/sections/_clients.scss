@@ -1,0 +1,102 @@
+@use "../util" as u;
+
+.clients {
+  padding-block: u.rem(80);
+  background-color: #0b7572;
+  margin-top: u.rem(200);
+  padding-inline: 8%;
+  gap: clamp(u.rem(20), 2rem + 2vw, u.rem(80));
+  @media (max-width: u.rem(1120)) {
+    flex-direction: column;
+    align-items: center;
+  }
+  &-info {
+    max-width: u.rem(400);
+    @media (max-width: u.rem(1120)) {
+      max-width: initial;
+    }
+    color: #fff;
+    h2 {
+      font-size: u.rem(48);
+    }
+  }
+  &__wrapper {
+    max-width: u.rem(652);
+    width: 100%;
+    padding: u.rem(28) u.rem(32);
+    border-radius: 1rem;
+    background-color: #fff;
+    flex-shrink: 0;
+    &-info {
+      font-size: u.rem(11);
+      border-bottom: 0.1rem solid #d7d7dd;
+      img {
+        width: u.rem(102);
+        height: u.rem(56);
+        flex-shrink: 0;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin: 0;
+        width: u.rem(280);
+        color: #6b6b6c;
+        @media (max-width: u.rem(732)) {
+          display: none;
+        }
+      }
+    }
+    &-inner {
+      margin-top: u.rem(32);
+      display: grid;
+      grid-template-columns: 3fr 4fr 4fr 4fr;
+      background-color: #f9f9fb;
+      @media (max-width: u.rem(732)) {
+        display: none;
+      }
+
+      //   Every items
+      .clients-item {
+        flex-shrink: 1;
+        border-right: 0.1rem solid #00000033;
+        border-bottom: 0.1rem solid #00000033;
+        p {
+          font-size: u.rem(14);
+        }
+        h4 {
+          font-size: u.rem(14);
+        }
+      }
+
+      //   every item except first 4 items
+      .clients-item:nth-child(4) ~ .clients-item {
+        padding: u.rem(24) u.rem(16);
+        p {
+          line-height: 1.35;
+          margin-bottom: u.rem(10);
+          font-weight: 400;
+          color: #6b6b6c;
+        }
+      }
+      //   firs 4 items
+      .clients-item:not(.clients-item:nth-child(4) ~ .clients-item) {
+        height: u.rem(45);
+        color: #fff;
+        background-color: #0b7572;
+        text-align: center;
+        line-height: u.rem(45);
+      }
+      //   every 4th item
+      .clients-item:nth-child(4n) {
+        border-right-color: transparent;
+      }
+      //   last 4 items
+      .helper ~ .clients-item {
+        border-bottom-color: transparent;
+      }
+      .stars {
+        color: #ffce50;
+        font-size: u.rem(12);
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@use "../util" as u;
+.hero {
+  padding-block: u.rem(39);
+  gap: u.rem(20);
+  .hero-info {
+    h1 {
+      font-size: clamp(u.rem(30), 1.4rem + 2vw, u.rem(52));
+    }
+    p {
+      color: #6b6b6c;
+      font-size: clamp(u.rem(13), 0.75rem + 0.34vw, u.rem(16));
+      @media (max-width: u.rem(768)) {
+        font-size: u.rem(13);
+      }
+    }
+    button {
+      width: fit-content;
+      font-size: u.rem(16);
+      border: none;
+      background-color: transparent;
+      border-bottom: u.rem(3) solid #ffce50;
+    }
+  }
+  #img {
+    @media (max-width: u.rem(768)) {
+      width: 86% !important;
+    }
+  }
+}

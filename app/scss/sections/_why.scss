@@ -1,0 +1,26 @@
+@use "../util" as u;
+.why {
+  height: u.rem(453);
+  margin-top: u.rem(67);
+  background-image: url(../../../images/why/why.png);
+  &-info {
+    height: 100%;
+    max-width: u.rem(768);
+    background-color: #0b7572;
+    clip-path: polygon(0 0, 54% 0, 100% 100%, 0% 100%);
+    h3 {
+      max-width: u.rem(362);
+      margin: 0;
+      margin-left: u.rem(90);
+      font-size: u.rem(48);
+      color: #fff;
+    }
+    @media (max-width: u.rem(700)) {
+      max-width: u.rem(500);
+      h3 {
+        max-width: u.rem(280);
+        margin-left: u.rem(40);
+      }
+    }
+  }
+}

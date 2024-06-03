@@ -1,0 +1,13 @@
+@use "../util" as u;
+.header {
+  padding-block: u.rem(23);
+  h2 {
+    font-size: u.rem(24);
+  }
+  &__links {
+    gap: u.rem(50);
+    a {
+      font-size: u.rem(16);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@use "../util" as u;
+.why-advantages {
+  margin-top: u.rem(40);
+  grid-template-columns: repeat(2, 2fr);
+  .why-advantage {
+    display: flex;
+    gap: u.rem(40);
+    padding: u.rem(26) u.rem(40);
+    &__img {
+      width: u.rem(80);
+      height: u.rem(80);
+      align-self: flex-start;
+      height: u.rem(80);
+      flex-shrink: 0;
+      background-color: #e9e9ec;
+      border-radius: 50%;
+    }
+    h3 {
+      font-size: u.rem(20);
+      margin-bottom: u.rem(16);
+    }
+    p {
+      color: #6b6b6c;
+      font-size: u.rem(16);
+    }
+    &__info {
+      max-width: u.rem(300);
+    }
+  }
+}

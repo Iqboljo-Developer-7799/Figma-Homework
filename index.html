@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <title>Folio</title>
+  </head>
+  <body class="font">
+    <header class="header d-flex justify-content-between container">
+      <div class="header__name">
+        <h2>грузовик</h2>
+      </div>
+      <div class="header__links d-flex d-none d-md-flex">
+        <a href="#">Главная</a>
+        <a href="#">Наши проекты</a>
+        <a href="#">Услуги</a>
+        <a href="#">Контакты</a>
+      </div>
+      <i class="fa-solid fa-bars d-block d-md-none"></i>
+    </header>
+    <section
+      class="hero container d-flex justify-content-between flex-column flex-md-row text-center text-md-start"
+    >
+      <div class="hero-info d-flex justify-content-center flex-column">
+        <h1>Поставщик Дальнего Востока</h1>
+        <p>
+          Наши клиенты получают полный спектр услуг по работе с Китаем. Начиная
+          с подбора производителя заканчивая доставкой товара до двери.
+          Настолько прозрачных сделок с Китаем вы еще не осуществляли.
+        </p>
+        <button class="mx-auto mx-md-0">Узнать больше</button>
+      </div>
+      <img
+        id="img"
+        class="w-50 mx-auto mx-lg-0"
+        src="./images/hero/hero.png"
+        alt="img of the trucks going to somewhere"
+      />
+    </section>
+    <section
+      class="advantages container d-grid d-lg-flex justify-content-between"
+    >
+      <div class="advantage d-flex flex-column">
+        <div class="advantage__img flex-center">
+          <img src="./images/advantages/1.png" alt="img of building" />
+        </div>
+        <h3>Поиск производителей по товару</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod incididunt ut.
+        </p>
+      </div>
+      <div class="advantage d-flex flex-column">
+        <div class="advantage__img flex-center">
+          <img src="./images/advantages/2.png" alt="img of machine" />
+        </div>
+        <h3>Поиск конкретного производителя</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod incididunt ut.
+        </p>
+      </div>
+      <div class="advantage d-flex flex-column last">
+        <div class="advantage__img flex-center">
+          <img src="./images/advantages/3.png" alt="img of delivery box" />
+        </div>
+        <h3>Доставка образцов товаров</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod incididunt ut.
+        </p>
+      </div>
+    </section>
+    <section class="why container">
+      <div class="why-info d-flex align-items-center">
+        <h3>Почему с нами выгоднее?</h3>
+      </div>
+    </section>
+    <section
+      class="why-advantages container d-flex d-md-grid flex-column flex-md-row"
+    >
+      <div class="why-advantage">
+        <div class="why-advantage__img flex-center">
+          <img src="./images/why-advantages/img-1.png" alt="img of lock" />
+        </div>
+        <div class="why-advantage__info">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod ut.
+          </p>
+        </div>
+      </div>
+      <div class="why-advantage">
+        <div class="why-advantage__img flex-center">
+          <img
+            src="./images/why-advantages/img-2.png"
+            alt="imh of to do list"
+          />
+        </div>
+        <div class="why-advantage__info">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod ut.
+          </p>
+        </div>
+      </div>
+      <div class="why-advantage">
+        <div class="why-advantage__img flex-center">
+          <img
+            src="./images/why-advantages/img-3.png"
+            alt="img of dollor signed coint"
+          />
+        </div>
+        <div class="why-advantage__info">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod ut.
+          </p>
+        </div>
+      </div>
+      <div class="why-advantage">
+        <div class="why-advantage__img flex-center">
+          <img src="./images/why-advantages/img-4.png" alt="" />
+        </div>
+        <div class="why-advantage__info">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod ut.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="work container">
+      <div class="work__info">
+        <h2>Выполненные работы</h2>
+        <p>
+          Мы собрали информацию по грузам, которые мы уже доставили.У нас
+          специальный подход к каждому виду товаров.
+        </p>
+      </div>
+      <div class="work__wrapper d-flex row">
+        <div class="work__wrapper-item col-lg-4 g-0">
+          <img
+            class="d-none d-lg-block"
+            src="./images/work/img-1.png"
+            alt="img of truck delivering container"
+          />
+          <img
+            class="d-block d-lg-none"
+            src="./images/work/img1.png"
+            alt="img of truck delivering container"
+          />
+          <div class="info mb-2 mb-sm-4 mb-lg-auto">
+            <h3>Станки и оборудование</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </p>
+            <button>20 000 руб.</button>
+          </div>
+        </div>
+        <div class="work__wrapper-item col-lg-4 g-0">
+          <img
+            class="d-none d-lg-block"
+            src="./images/work/img-2.png"
+            alt="img of working employee"
+          />
+          <img
+            class="d-block d-lg-none"
+            src="./images/work/img2.png"
+            alt="img of working employee"
+          />
+          <div class="info mb-2 mb-sm-4 mb-lg-auto">
+            <h3>Компоненты и запчасти</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </p>
+            <button>18 000 руб.</button>
+          </div>
+        </div>
+        <div class="work__wrapper-item d-none d-lg-block col-lg-4 g-0">
+          <img
+            src="./images/work/img-3.png"
+            alt="truck which is delivering container"
+          />
+          <div class="info">
+            <h3>Станки и оборудование</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </p>
+            <button>20 000 руб.</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="clients container d-flex">
+      <div class="clients-info">
+        <h2>Привлеченные клиенты</h2>
+      </div>
+      <div class="clients__wrapper">
+        <div class="clients__wrapper-info d-flex justify-content-between">
+          <img src="./images/clients/logo/logo.png" alt="brand logo" />
+          <p>
+            ООО "ПДВ" ИНН 7329023100 КПП 732901001 433405, Ульяновская обл.,
+            Территория Портовой особой Экономической зоны, Проезд Первых
+            Резидентов 3 Телефон: +7 8422 99 666 5 e-mail: info@pdv.ooo
+          </p>
+        </div>
+        <div class="clients__wrapper-inner-mobile">
+          <p>Клиент №1</p>
+          <div class="clients-item">
+            <img src="./images/clients/engine-img.png" alt="img of engine" />
+            <div class="clients-item-info">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod ut.
+              </p>
+              <h6>120 000 руб.</h6>
+            </div>
+          </div>
+          <div class="clients-item">
+            <h6>Завод “Hlobalkhim”</h6>
+            <p>г. Москва, проспект Кутузовский, д. 12 стр. 1 этаж, пом. 1</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>jsj
+          </div>
+          <div class="clients-item">
+            <h6>Коваль Иван Борисович</h6>
+            <p>Руководитель отдела поставок</p>
+            <p>+ 7 (495) 765 33 22</p>
+          </div>
+        </div>
+        <div class="clients__wrapper-inner">
+          <div class="clients-item">
+            <p>Фото</p>
+          </div>
+          <div class="clients-item">
+            <p>Название</p>
+          </div>
+          <div class="clients-item">
+            <p>Производитель</p>
+          </div>
+          <div class="clients-item">
+            <p>Контакт</p>
+          </div>
+          <div class="clients-item">
+            <img src="./images/clients/engine-img.png" alt="img of engine" />
+          </div>
+          <div class="clients-item">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </p>
+            <h4>120 000 руб.</h4>
+          </div>
+          <div class="clients-item">
+            <h4>Завод “Hlobalkhim”</h4>
+            <p>г. Москва, проспект Кутузовский, д. 12 стр. 1 этаж, пом. 1</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="clients-item">
+            <h4>Коваль Иван Борисович</h4>
+            <p>Руководитель отдела поставок</p>
+            <p>+ 7 (495) 765 33 22</p>
+          </div>
+          <div class="clients-item">
+            <img src="./images/clients/engine-img.png" alt="img of engine" />
+          </div>
+          <div class="clients-item">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </p>
+            <h4>50 000 руб.</h4>
+          </div>
+          <div class="clients-item">
+            <h4>Даниловский строительный завод</h4>
+            <p>Москва, Даниловская наб., д. 8 стр. 1 этаж, пом. 2</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="clients-item helper">
+            <h4>Лубен Валерий Вячеславович</h4>
+            <p>Руководитель отдела поставок</p>
+            <p>+ 7 (495) 765 33 22</p>
+          </div>
+          <div class="clients-item">
+            <img src="./images/clients/engine-img.png" alt="img of engine" />
+          </div>
+          <div class="clients-item">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod ut.
+            </p>
+            <h4>120 000 руб.</h4>
+          </div>
+          <div class="clients-item">
+            <h4>Завод “Hlobalkhim”</h4>
+            <p>г. Москва, проспект Кутузовский, д. 12 стр. 1 этаж, пом. 1</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="clients-item">
+            <h4>Коваль Иван Борисович</h4>
+            <p>Руководитель отдела поставок</p>
+            <p>+ 7 (495) 765 33 22</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>
